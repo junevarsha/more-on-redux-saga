@@ -9,7 +9,7 @@ export function* loadDashboardSequenced() {
     // Take pauses until action received.
     //Wait for the user to be loaded
       const user_success = yield take('FETCH_USER_SUCCESS');
-      console.log("user suc val", user_success);
+      // console.log("user suc val", user_success);
       //Take the user info from the store
       const user = yield select(getUserFromState);
       //Get Departure information
