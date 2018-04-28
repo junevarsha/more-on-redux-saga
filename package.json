@@ -24,9 +24,7 @@
     "test:cover": "babel-node node_modules/isparta/bin/isparta cover --root src --report html node_modules/mocha/bin/_mocha -- --require ./tools/testSetup.js \"src/**/*.spec.js\" --reporter progress",
     "test:cover:travis": "babel-node node_modules/isparta/bin/isparta cover --root src --report lcovonly _mocha -- --require ./tools/testSetup.js \"src/**/*.spec.js\" && cat ./coverage/lcov.info | node_modules/coveralls/bin/coveralls.js",
     "test:watch": "npm run test -- --watch",
-    "open:cover": "npm run test:cover && open coverage/index.html",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "open:cover": "npm run test:cover && open coverage/index.html"
   },
   "author": "Andres Mijares",
   "license": "MIT",
@@ -41,9 +39,7 @@
     "redux": "3.5.2",
     "redux-saga": "0.11.0"
   },
-  "homepage": "http://junevarsha.github.io/take-effect-redux-saga",
   "devDependencies": {
-    "gh-pages": "^1.1.0",
     "autoprefixer": "6.3.7",
     "babel-cli": "6.11.4",
     "babel-core": "6.11.4",
