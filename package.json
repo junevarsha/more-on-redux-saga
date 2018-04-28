@@ -7,8 +7,6 @@
   },
   "scripts": {
     "preinstall": "node tools/nodeVersionCheck.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "setup": "node tools/setup/setupMessage.js && npm install && node tools/setup/setup.js",
     "start-message": "babel-node tools/startMessage.js",
     "prestart": "npm-run-all --parallel start-message remove-dist",
@@ -41,7 +39,6 @@
     "redux": "3.5.2",
     "redux-saga": "0.11.0"
   },
-  "homepage": "http://junevarsha.github.io/more-on-redux-saga",
   "devDependencies": {
     "autoprefixer": "6.3.7",
     "babel-cli": "6.11.4",
