@@ -1,6 +1,5 @@
 {
   "name": "async-redux-saga",
-  "homepage": "http://gitname.github.io/more-on-redux-saga"
   "version": "1.0.0",
   "description": "Sample distributed calls using sagas",
   "engines": {
@@ -27,7 +26,7 @@
     "test:watch": "npm run test -- --watch",
     "open:cover": "npm run test:cover && open coverage/index.html",
     "predeploy": "npm run build",
-    "deploy": "more-on-redux-saga -d build"
+    "deploy": "gh-pages -d build"
   },
   "author": "Andres Mijares",
   "license": "MIT",
@@ -42,7 +41,9 @@
     "redux": "3.5.2",
     "redux-saga": "0.11.0"
   },
+  "homepage": "http://junevarsha.github.io/take-effect-redux-saga",
   "devDependencies": {
+    "gh-pages": "^1.1.0",
     "autoprefixer": "6.3.7",
     "babel-cli": "6.11.4",
     "babel-core": "6.11.4",
